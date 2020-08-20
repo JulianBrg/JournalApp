@@ -1,6 +1,6 @@
 {
   "name": "journal-app",
-  "homepage":"https://julianbrg.github.io/JournalApp/",
+  "homepage": "https://julianbrg.github.io/JournalApp/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
