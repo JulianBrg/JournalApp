@@ -21,13 +21,13 @@ export const startLoginEmailPassword = (email, password) => {
                 console.log(e);
                 dispatch(finishLoading());
 
-                if(e.code === 'auth/user-not-found'){
+                if (e.code === 'auth/user-not-found') {
                     Swal.fire(
                         'Error',
                         'Correo incorrecto o usuario no registrado',
                         'error'
                     )
-                } else if (e.code === 'auth/wrong-password'){
+                } else if (e.code === 'auth/wrong-password') {
                     Swal.fire(
                         'Ups!!',
                         'La contraseña no es válida o el usuario no tiene contraseña',
@@ -84,7 +84,7 @@ export const login = (uid, displayName) => {
 
 
 export const startLogout = () => {
-    return async ( dispatch ) => {
+    return async (dispatch) => {
         await firebase.auth().signOut();
 
         dispatch(logout());
@@ -94,5 +94,5 @@ export const startLogout = () => {
 }
 
 export const logout = () => ({
-    type: types.logout 
+    type: types.logout
 })

@@ -31,7 +31,7 @@ export const activeNote = (id, note) => ({
     }
 });
 
-export const addNewNote = (id, note) =>({
+export const addNewNote = (id, note) => ({
     type: types.notesAddNew,
     payload: {
         id, ...note
